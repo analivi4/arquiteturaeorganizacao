@@ -7,7 +7,7 @@
    - e - correto
    - f - errado
 
- - Qestão 2
+ - Questão 2
    - a
      - `initial byte ?`
    - b
