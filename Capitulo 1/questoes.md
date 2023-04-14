@@ -63,7 +63,7 @@
         mov x, eax 
     ```
     - e
-    ```
+    ```asm
         mov a, 1
         mov b, 2
         mov eax, a
