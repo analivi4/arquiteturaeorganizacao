@@ -7,7 +7,7 @@
    - e - correto
    - f - errado
 
- - Qestão 2
+ - Questão 2
    - a
      - `initial byte ?`
    - b
@@ -63,7 +63,7 @@
         mov x, eax 
     ```
     - e
-    ```
+    ```asm
         mov a, 1
         mov b, 2
         mov eax, a
