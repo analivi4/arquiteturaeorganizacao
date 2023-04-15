@@ -20,7 +20,7 @@ msg2      byte "Enter a larger number: ",0
 msg3      byte "Enter an even larger", 0
 msg31     byte "number: ",0
 msg4      byte "  <  ",0
-msg5     byte "  >  ",0
+msg5      byte "  >  ",0
 num1      sdword ?
 num2      sdword ?
 num3      sdword ?
