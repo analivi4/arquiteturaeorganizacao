@@ -59,6 +59,78 @@
     imul ecx
     add ebx, eax
     mov x, ebx
+```
+- **b )**
+```asm
+    mov ebx, 3
+    mov eax, c
+    cdq
+    idiv ebx
+    mov ebx, b
+    sub ebx, eax
+    mov a, ebx
+```
+- **c )**
+```asm
+    mov eax, num3
+    imul num4
+    mov ebx, eax
+    mov eax, num1
+    cdq
+    idiv num2
+    sub eax, ebx
+    mov total, eax
+```
+- **d )**
+```asm
+    mov eax, s
+    neg eax
+    add eax, t
+    mov r, eax
+    inc t
+```
+- **e )**
+```asm
+    mov eax, i
+    sub eax, j
+    imul k
+    imul n
+    mov m, eax
+```
+- **f )**
+```asm
+    mov eax, c
+    cdq
+    idiv d
+    imul e
+    mov ebx, a
+    sub ebx, b
+    add ebx, eax
+    mov q, ebx
+```
+
+### **Questão 4** ###
+
+- **a )**
+```asm
+    dec i
+```
+- **b )**
+```asm
+    inc k
+    mov eax, k
+    sub eax, m
+    mov j, eax
+```
+- **c )**
+```asm
+    mov eax, x
+    add eax, y
+    neg eax
+    mov z, eax
+```
+- **d )**
+```asm
     inc b
     mov eax, b
     sub eax, c
