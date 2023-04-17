@@ -10,8 +10,8 @@ printf    PROTO arg1:Ptr Byte, printlist:VARARG
 scanf     PROTO arg2:Ptr Byte, printlist:VARARG
           .data
 in1fmt    byte "%d", 0
-msg1fmt   byte 0Ah,"%s%", 0
-msg2fmt   byte 0Ah,"%s%", 0Ah, 0Ah, 0
+msg1fmt   byte 0Ah,"%s", 0
+msg2fmt   byte 0Ah,"%s", 0Ah, 0Ah, 0
 msg3fmt   byte "%s%d%s%d", 0Ah, 0Ah, 0
 msg1      byte "Enter a value for num1: ",0
 msg2      byte "Enter a value for num2: ",0
