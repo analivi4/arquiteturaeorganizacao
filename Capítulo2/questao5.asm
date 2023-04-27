@@ -1,7 +1,7 @@
 ;
 ;   Building Instructions:
 ;   ml /Cx /coff questao5.asm /link /SUBSYSTEM:console /out:questao5.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
-;
+; Correção: 0,5
 
           .686
           .model flat, c

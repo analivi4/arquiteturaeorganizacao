@@ -2,6 +2,8 @@
 
 ### Questão 1
 
+> Correção: 0,5
+
 - a )  Correta
 
 - b ) Incorreta, o \n não tá em hexadecímal, deveria ser 
@@ -16,6 +18,7 @@
 
 ### Questão 2
 
+> Correção: 0,5
 
 Ao usar o IVOKE para o printf o conteúdo de eax é perdido, então é necessário armazenar o valor de eax em outra variável antes de usar o printf.
 
@@ -30,6 +33,8 @@ mov num2,eax
 
 ### Questão 3
 
+> Correção: 0,5
+
 ```
 xb=b1byb=b2
 blank line
@@ -38,6 +43,8 @@ z=3
 ```
 
 ### Questão 4
+
+> Correção: 0,5
 
 ```
 blank line

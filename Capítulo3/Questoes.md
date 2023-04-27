@@ -1,8 +1,10 @@
 # **Capítulo 3** #
 
-
+> Correção: 1,9
 
 ### **Questão 18** ###
+
+> Correção: 0,5
 
 - **a )** incorreto, inc é um operador unário 
 
@@ -17,6 +19,8 @@
 - **f )** correto
 
 ### **Questão 2** ###
+
+> Correção: 0,5
 
 - **a )**
 ```asm
@@ -48,6 +52,8 @@
 ```
 
 ### **Questão 3** ###
+
+> Correção: 0,5
 
 - **a )**
 ```asm
@@ -111,6 +117,8 @@
 
 ### **Questão 4** ###
 
+> Correção: 0,4
+
 - **a )**
 ```asm
     dec i
@@ -138,6 +146,9 @@
     inc c
 ```
 - **e )**
+
+> Correção: o _z_ deve ser decrementado.
+
 ```asm
     mov eax, y
     neg eax

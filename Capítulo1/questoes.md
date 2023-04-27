@@ -1,5 +1,11 @@
 # **Capitulo 1**
+
+> Correção: 2,0
+
  - Questão 1
+
+> Correção: 0,4
+
    - a - correto
    - b - errado
    - c - correto
@@ -8,20 +14,27 @@
    - f - errado
 
  - Questão 2
+
+> Correção: 0,4
+
    - a
      - `initial byte ?`
    - b
-     - `garde byte 'b'`
+     - `grade byte 'b'`
    - c
       - `x byte 'P'`
       - `y byte 'Q'`
     - d
-      - `amont sdword ?`
+      - `amount sdword ?`
     - e
-      - `cont sdword 0`
+      - `count sdword 0`
     - f
       - `numer sdword -359`
+
   - Questão 3
+
+> Correção: 0,4
+
     - a
       - errado, move não esta correto, o correto é mov
     - b
@@ -39,7 +52,10 @@
     - h
       - correto
 
-  - Qestão 4
+  - Questão 4
+
+> Correção: 0,4
+
     - a
     ```asm
         mov i,1
@@ -74,6 +90,9 @@
         mov b, eax
     ```
   - Questão 5
+
+> Correção: 0,4
+
     - a
     ```asm
         mov a, 'B'
