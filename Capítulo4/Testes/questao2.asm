@@ -1,6 +1,6 @@
 ;
 ;   Building Instructions:
-;   ml /Cx /coff CompleteProgram.asm /link /SUBSYSTEM:console /out:CompleteProgram.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+;   ml /Cx /coff questao2.asm /link /SUBSYSTEM:console /out:questao2.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 ;
         .686
         .model  flat, c
@@ -8,29 +8,35 @@
 printf  PROTO   arg1:Ptr Byte, printlist:VARARG
 scanf   PROTO   arg2:Ptr Byte, inputlist:VARARG
         .data
-a   stdword ?
-b   stdword ?
-c   stdword ?
-d   stdword ?
+msg1fmt byte    "%d",0Ah,0 
+a   sdword 2
+b   sdword 4
+k   sdword 7
+d   sdword 6
         .code
 main    proc
         mov eax, b
-        mov ebx, c
+        mov ebx, k
         .if  a > eax
         dec a
         .else
-        .if eax >= ebc
-        dec eax, 2
+        .if eax >= ebx
+        sub eax, 2
         .else 
         .if ebx > d
         add ebx,d
         .else
         mov edx, d
-        imul 2
+        imul edx, 2
         .endif
         .endif
         .endif
-
-
+        mov d, edx
+        mov b, eax
+        mov k, ebx
+        INVOKE printf, ADDR msg1fmt, a
+        INVOKE printf, ADDR msg1fmt, b
+        INVOKE printf, ADDR msg1fmt, k
+        INVOKE printf, ADDR msg1fmt, d
 main    endp
         end
