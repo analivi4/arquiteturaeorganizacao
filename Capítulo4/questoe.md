@@ -64,12 +64,12 @@
       je and01
       cmp b,2
       jne endif01
-and01: cmp k,3
+  and01: cmp k,3
       jg then01
       cmp d,4
       jg endif01
-then01: dec e
-endif01: nop
+  then01: dec e
+  endif01: nop
   ``` 
 
 - 4
