@@ -38,12 +38,12 @@
   ```
   - 2
   ```asm
-if01: cmp num,0
+  if01: cmp num,0
       jle then01
       cmp num, 3
       jle endif01
-then01: sub count,2
-endif01: nop
+  then01: sub count,2
+  endif01: nop
   ```
 
   - 3
