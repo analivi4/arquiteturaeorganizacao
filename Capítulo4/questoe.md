@@ -59,7 +59,7 @@
   ```
 
   - 4
-  ```ams
+  ```asm
   if01: cmp a,1
       je end01
       cmp b,2
@@ -75,7 +75,7 @@
 - 4
 
 - 5
-```ams
+```asm
 switch01: cmp w,0
           je case11
           cmp w,1
