@@ -7,7 +7,7 @@
   - 4 - correto.
 
 - 2
-  ```ams
+  ```asm
     mov eax, b
     mov ebx, c
     .if  a > eax
@@ -61,15 +61,15 @@
   - 4
   ```asm
   if01: cmp a,1
-      je end01
+      je and01
       cmp b,2
       jne endif01
-  and01: cmp c,3
+and01: cmp k,3
       jg then01
       cmp d,4
       jg endif01
-  then01: dec e
-  endif01: nop
+then01: dec e
+endif01: nop
   ``` 
 
 - 4

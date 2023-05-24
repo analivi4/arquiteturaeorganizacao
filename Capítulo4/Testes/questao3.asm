@@ -9,22 +9,23 @@ printf  PROTO   arg1:Ptr Byte, printlist:VARARG
 scanf   PROTO   arg2:Ptr Byte, inputlist:VARARG
         .data
 msg1fmt byte    "%d",0
-x sdword  2
-w sdword  1
-z sdword  10
-y sdword  4
+d sdword  5
+k sdword  2
+b sdword  2
+a sdword  8
+e sdword 80
         .code
 main     proc
 if01: cmp a,1
-      je end01
+      je and01
       cmp b,2
       jne endif01
-and01: cmp c,3
+and01: cmp k,3
       jg then01
       cmp d,4
       jg endif01
 then01: dec e
 endif01: nop
-        INVOKE printf, ADDR msg1fmt, z
+        INVOKE printf, ADDR msg1fmt, e
 main endp
     end
