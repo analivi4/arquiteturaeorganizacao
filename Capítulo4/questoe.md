@@ -77,11 +77,11 @@
 - 5
 ```ams
 switch01: cmp w,0
-          je endswitch01
+          je case11
           cmp w,1
           je case11
           cmp w,2
-          je endswitch01
+          je case12
           cmp w, 3
           je case12
 case11: add count,2
