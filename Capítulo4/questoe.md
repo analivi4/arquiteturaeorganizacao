@@ -9,18 +9,18 @@
 - 2
   ```asm
     mov eax, b
-    mov ebx, c
+    mov ebx, k
     .if  a > eax
     dec a
     .else
-    .if eax >= ebc
-    dec eax, 2
+    .if eax >= ebx
+    sub eax, 2
     .else 
     .if ebx > d
     add ebx,d
     .else
     mov edx, d
-    imul 2
+    imul edx, 2
     .endif
     .endif
     .endif
@@ -64,7 +64,7 @@
       je and01
       cmp b,2
       jne endif01
-  and01: cmp k,3
+  and01: cmp c,3
       jg then01
       cmp d,4
       jg endif01

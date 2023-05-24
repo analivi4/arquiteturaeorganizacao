@@ -31,9 +31,6 @@ main    proc
         .endif
         .endif
         .endif
-        mov d, edx
-        mov b, eax
-        mov k, ebx
         INVOKE printf, ADDR msg1fmt, a
         INVOKE printf, ADDR msg1fmt, b
         INVOKE printf, ADDR msg1fmt, k
