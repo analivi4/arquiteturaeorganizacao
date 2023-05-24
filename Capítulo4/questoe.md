@@ -9,7 +9,7 @@
 - 2
   ```asm
     mov eax, b
-    mov ebx, k
+    mov ebx, c
     .if  a > eax
     dec a
     .else
