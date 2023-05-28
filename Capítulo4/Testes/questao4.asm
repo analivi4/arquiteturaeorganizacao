@@ -1,6 +1,6 @@
 ;
 ;   Building Instructions:
-;   ml /Cx /coff questao2.asm /link /SUBSYSTEM:console /out:questao2.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+;   ml /Cx /coff questao4.asm /link /SUBSYSTEM:console /out:questao4.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 ;
         .686
         .model  flat, c
