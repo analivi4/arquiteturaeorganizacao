@@ -102,6 +102,19 @@
 
         mov i, 10
         mov sun, 0
+        .repeat
+        mov eax, sun
+        add eax, i
+        mov sun,eax
+        mov eax, i
+        sub eax, 2
+        mov i, eax
+        .until i <= 0
+
+  ; sem diretiva
+
+        mov i, 10
+        mov sun, 0
   repeat01: nop
         mov eax, sun
         add eax, i
@@ -115,3 +128,15 @@
   ```
 
 - 8
+  ```asm
+        mov ecx, 2
+  for01:  nop
+        mov tempecx, ecx
+        mov ecx, 3
+  for02:  nop
+        ; body of nested loop
+        loop for1
+  endfor02: nop
+        mov ecx, tempecx
+  endfor01: nop
+  ```

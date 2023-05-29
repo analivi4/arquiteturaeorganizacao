@@ -15,16 +15,14 @@ i       sdword ?
 main    proc
         mov i, 10
         mov sun, 0
-repeat01: nop
+        .repeat
         mov eax, sun
         add eax, i
         mov sun,eax
         mov eax, i
         sub eax, 2
         mov i, eax
-        cmp i,0
-        jg repeat01
-endrpt01:nop
+        .until i <= 0
         INVOKE printf, ADDR msg1fmt, sun
         INVOKE printf, ADDR msg1fmt, i
 main    endp
