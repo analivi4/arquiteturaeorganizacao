@@ -2,7 +2,7 @@
 
 - 1
   - a - errado, usa == para comparar duas coisas.
-  - b - errado, o uso do them esta errado.
+  - b - errado, o uso do them esta errado, não precisa usando diretivas 
   - c - correto sintaticamente, mas não vai fazer o esperado.
   - d - correto.
 
@@ -15,19 +15,24 @@
     .else
     .if eax >= ebx
     sub eax, 2
+    mov b, eax
     .else 
     .if ebx > d
     add ebx,d
+    mov c, ebx
     .else
-    mov edx, d
-    imul edx, 2
+    mov eax, d
+    cdq
+    mov ebx, 2
+    idiv ebx
+    mov d, eax
     .endif
     .endif
     .endif
     ```
 
 - 3
-  - 1
+  - a
   ```asm
   if01: cmp w,1
       jne endif01
@@ -36,7 +41,7 @@
   then01: dec y
   endif01: nop
   ```
-  - 2
+  - b
   ```asm
   if01: cmp num,0
       jle then01
@@ -46,7 +51,7 @@
   endif01: nop
   ```
 
-  - 3
+  - c
   ```asm
   if01: cmp w,1
       je and01
@@ -58,16 +63,16 @@
   endif01: nop
   ```
 
-  - 4
+  - d
   ```asm
-  if01: cmp a,1
-      je and01
-      cmp b,2
-      jne endif01
-  and01: cmp c,3
-      jg then01
-      cmp d,4
-      jg endif01
+  if01: cmp b,2
+        jne or01
+        cmp c,3
+        jg then01
+  or01: cmp a, 1
+        je then01
+        cmp d, 4
+        jg endif01
   then01: dec e
   endif01: nop
   ``` 
