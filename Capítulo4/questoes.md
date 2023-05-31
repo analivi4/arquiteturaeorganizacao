@@ -1,10 +1,10 @@
 ## Capítulo 4 ##
 
 - 1
-  - 1 - errado, usa == para coparar duas coisas.
-  - 2 - errado, o uso do them esta errado.
-  - 3 - correto.
-  - 4 - correto.
+  - a - errado, usa == para comparar duas coisas.
+  - b - errado, o uso do them esta errado.
+  - c - correto sintaticamente, mas não vai fazer o esperado.
+  - d - correto.
 
 - 2
   ```asm
