@@ -79,5 +79,66 @@
 
 ### Questão 4
 
+```
+if (a<=b)
+  if(b<c)
+    if(c>d)
+      c = c + d
+    else
+      d = d/2
+  else
+    b = b - 2
+else
+  a = a - 1
+```
 
+- A)
+
+  ```asm
+  mov eax, b
+  mov ebx, c
+  if. a <= eax
+  if. eax < ebx
+  if. ebx > c
+  add ebx, d
+  mov c, ebx
+  else.
+  mov eax, d
+  cdq
+  mov ebx, 2
+  idiv ebx
+  mov d, eax
+  endif.
+  else.
+  sub b, 2
+  endif.
+  else.
+  dec a
+  endif.
+  ```
+- B)
+  ```asm
+          mov eax, b
+          mov ebx, c
+  if01:   cmp a, eax
+          jg else01
+  than01: nop
+  if02:   cmp eax, ebx
+          jge else02
+  than02: nop
+  if03:   cmp ebx, d
+          jle else03
+  than03: add ebx, d
+          mov c, ebx
+          jmp endif01
+  else03: mov eax, d
+          cdq
+          mov ebx, 2
+          idiv ebx
+          mov d, eax
+          jmp endif01      
+  else02: sub b,2
+          jmp endif01
+  else01: dec a
+  endif01:  nop
 
