@@ -9,17 +9,17 @@ printf  PROTO   arg1:Ptr Byte, printlist:VARARG
 scanf   PROTO   arg2:Ptr Byte, inputlist:VARARG
         .data
 msg1fmt byte    "%d",0
-w sdword  1 
+number sdword  1 
 count sdword  10
         .code
 main    proc
-switch01: cmp w,0
+switch01: cmp number,0
           je case11
-          cmp w,1
+          cmp number,1
           je case11
-          cmp w,2
+          cmp number,2
           je case12
-          cmp w, 3
+          cmp number,3
           je case12
 case11: add count,2
         jmp endswitch01

@@ -1,12 +1,12 @@
 ## Capítulo 4 ##
 
-- 1
-  - a - errado, usa == para comparar duas coisas.
-  - b - errado, o uso do them esta errado, não precisa usando diretivas 
-  - c - correto sintaticamente, mas não vai fazer o esperado.
-  - d - correto.
+### Questão 1
+  - a ) errado, usa == para comparar duas coisas.
+  - b ) errado, o uso do them esta errado, não precisa usando diretivas 
+  - c ) correto sintaticamente, mas não vai fazer o esperado.
+  - d ) correto.
 
-- 2
+### Questão 2
   ```asm
     mov eax, b
     mov ebx, c
@@ -31,8 +31,8 @@
     .endif
     ```
 
-- 3
-  - a
+### Questão 3
+  - A)
   ```asm
   if01: cmp w,1
       jne endif01
@@ -41,7 +41,7 @@
   then01: dec y
   endif01: nop
   ```
-  - b
+  - B)
   ```asm
   if01: cmp num,0
       jle then01
@@ -51,7 +51,7 @@
   endif01: nop
   ```
 
-  - c
+  - C)
   ```asm
   if01: cmp w,1
       je and01
@@ -63,7 +63,7 @@
   endif01: nop
   ```
 
-  - d
+  - D)
   ```asm
   if01: cmp b,2
         jne or01
@@ -77,20 +77,7 @@
   endif01: nop
   ``` 
 
-- 4
+### Questão 4
 
-- 5
-```asm
-switch01: cmp w,0
-          je case11
-          cmp w,1
-          je case11
-          cmp w,2
-          je case12
-          cmp w, 3
-          je case12
-case11: add count,2
-        jmp endswitch01
-case12: sub count,2
-endswitch01: nop
-```
+
+
