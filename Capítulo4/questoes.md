@@ -29,9 +29,10 @@
     .endif
     .endif
     .endif
-    ```
+  ```
 
 ### Questão 3
+
   - A)
   ```asm
   if01: cmp w,1
