@@ -1,52 +1,54 @@
 # Capítulo 5
 
-- 1
+ ### Questão 1
   - a - incorreta, não existe essas diretivas em MASM
   - b - incorreta, falta o . na frente do while
   - c - correta
-  - d - correta
+  - d - incorreta, a diretiva é .until ou .untilcxz
   - e - incorreta, as diretivas estão erradas
 
--  2
+ ### Questão 2
    ```asm
-    mov ebx, i
+            mov ans, 0
     if01:   cmp x,0
             je endif01
-    while01: cmp ebx, y
+            mov ecx, 1
+    while01: cmp ecx, y
             jg endw01
             mov eax, ans
             add eax, x
             mov ans, eax
-            inc i
-            mov ebx, i
+            inc ecx
             jmp while01
     endw01: nop
+            mov i, ecx
     endif01:nop
-    ```
--  3
-   - a - 3
-   - b - 1
-   - c - 0
+```
 
--  4
+ ### Questão 3
+   - a - 3 vezes 
+   - b - 1 vez
+   - c - Nenhuma vez
+
+ ### Questão 4
+ 
    ```asm
         mov ans,0
     if01:   cmp y, 0
         je endif01
-        mov i,1
-        mov ebx,i
+        mov ecx,1
     repeat01: nop
         mov eax, ans
         add eax, x
         mov ans, eax
-        inc i
-        mov ebx,i
-        cmp ebx,y
+        inc ecx
+        cmp ecx,y
         jle repeat01
     endrpt01:nop
+        mov i, ecx
     endif01: nop
    ```
--  5
+   ### Questão 5
    - a 
    ```asm
    ;com diretiva
@@ -78,7 +80,6 @@
             sub edx, ebx
             inc eax
             .until edx < ebx
-            mov i, eax
 
     ;sem diretiva
             mov edx, eax
@@ -93,6 +94,16 @@
    - c
    ```asm
    ;com diretiva
+            mov edx, eax
+            mov eax, 0
+            mov ecx, 1
+      .repeat
+      .if edx >= ebx
+            sub edx, ebx
+            inc eax
+            inc ecx
+      .endif
+      .untilcxz
 
    ```
 - 6
