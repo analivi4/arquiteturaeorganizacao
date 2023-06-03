@@ -33,7 +33,7 @@ main      proc
           INVOKE printf, ADDR msg1fmt, ADDR msg5
           INVOKE printf, ADDR msg1fmt, ADDR msg1
           INVOKE scanf, ADDR in1fmt, ADDR register
-          
+          .while register <= 31
           test register, 00000001b
           .if !ZERO?                ; if bit0 = 1 then
           INVOKE printf, ADDR msg1fmt, ADDR msgb0
@@ -65,6 +65,15 @@ main      proc
           .endif
           INVOKE printf, ADDR msg1fmt, ADDR msgfim
 fim:      nop
+
+          INVOKE printf, ADDR msg1fmt, ADDR msg2
+          INVOKE printf, ADDR msg1fmt, ADDR msg3
+          INVOKE printf, ADDR msg1fmt, ADDR msg4
+          INVOKE printf, ADDR msg1fmt, ADDR msg5
+          INVOKE printf, ADDR msg1fmt, ADDR msg1
+          INVOKE scanf, ADDR in1fmt, ADDR register
+          .endw
+
           ret
 main      endp
           end
