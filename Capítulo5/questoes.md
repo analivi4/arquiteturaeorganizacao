@@ -48,7 +48,7 @@
         mov i, ecx
     endif01: nop
    ```
-   ### Questão 5
+   ### Questão 5 (tem o os arquivos .asm de cada item na pasta do capítulo)
    - a 
    ```asm
    ;com diretiva
@@ -106,11 +106,20 @@
       .untilcxz
 
    ```
- ### Questão 6
+ ### Questão 6 (tem o o arquivo .asm na pasta do capítulo)
  ```asm
-      
-
+        mov sum, 0
+        mov eax, 1
+        mov ecx, 1
+        .repeat
+        .if eax <= n
+        add sum, eax
+        inc eax
+        .endif
+        .untilcxz
+        mov i, eax
  ```
+ Dessa forma n ser menor ou igual a 0 não acontecerá nada, vai ser como se não tivesse entrado no loop, que é exatamente o que aconteceria no código em C.
  ### Questão 7
 
  - Com diretiva
