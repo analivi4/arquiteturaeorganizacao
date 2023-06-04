@@ -1,11 +1,11 @@
-Microsoft (R) Macro Assembler Version 14.35.32215.0	    06/03/23 22:36:13
+Microsoft (R) Macro Assembler Version 14.35.32215.0	    06/03/23 22:49:01
 questao6.asm						     Page 1 - 1
 
 
 				;
 				;   Building Instructions:
 				;   ml /c /Fl"questao6.lst" /Cx /coff questao6.asm /link /SUBSYSTEM:console  /out:questao6.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
-				;
+				;   ml /Cx /coff questao6.asm /link /SUBSYSTEM:console /out:questao6.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 
 				        .686
 				        .model  flat, c
@@ -29,13 +29,14 @@ questao6.asm						     Page 1 - 1
 	   64 6F 20 65 3A
 	   20 00
  00000041 0000000A		x      sdword 10
- 00000045 00000000		y       sdword 0
+
+ 00000045 00000005		y      sdword 5
 
  00000049 00000000		result  sdword 0
 
  00000000			     .code
 				MULACC  MACRO   operand
-				          if operant EQ 0
+				          if operand EQ 0
 				               mov eax, 0
 				          elseif operand EQ 1
 				               nop
@@ -62,36 +63,21 @@ questao6.asm						     Page 1 - 1
 				          
  00000000			main    proc
  00000000  A1 00000041 R	          mov eax, x
-				          MULACC y 
-			     1	          if operant EQ 0
-questao6.asm(51) : error A2006:undefined symbol : operant
- MULACC(1): Macro Called From
-  questao6.asm(51): Main Line Code
-			     1	          else
-questao6.asm(51) : error A2094:operand must be relocatable
- MULACC(3): Macro Called From
-  questao6.asm(51): Main Line Code
+				          MULACC 5
  00000005  53		     1	               push ebx
  00000006  51		     1	               push ecx
  00000007  8B D8	     1	               mov ebx, eax
  00000009  B8 00000000	     1	               mov eax, 0
- 0000000E  8B 0D 00000045 R  1	               mov ecx, y
-			     1	               .while ecx > 0
-questao6.asm(51) : error A2094:operand must be relocatable
- MULACC(11): Macro Called From
-  questao6.asm(51): Main Line Code
- 00000016  03 C3	     1	                    add eax, ebx
- 00000018  49		     1	                    dec ecx
- 0000001E  59		     1	               pop ecx
- 0000001F  5B		     1	               pop ebx
-questao6.asm(52) : error A2094:operand must be relocatable
- MULACC(18): Macro Called From
-  questao6.asm(51): Main Line Code
- 00000020  A3 00000049 R	          mov result, eax
+ 0000000E  B9 00000005	     1	               mov ecx, 5
+ 00000015  03 C3	     1	                    add eax, ebx
+ 00000017  49		     1	                    dec ecx
+ 0000001D  59		     1	               pop ecx
+ 0000001E  5B		     1	               pop ebx
+ 0000001F  A3 00000049 R	          mov result, eax
 				          INVOKE  printf, ADDR msg1fmt, ADDR msg1, x, ADDR msg2, y, ADDR msg3, result
- 00000053			main    endp
+ 00000052			main    endp
 				        end
-Microsoft (R) Macro Assembler Version 14.35.32215.0	    06/03/23 22:36:13
+Microsoft (R) Macro Assembler Version 14.35.32215.0	    06/03/23 22:49:01
 questao6.asm						     Symbols 2 - 1
 
 
@@ -111,14 +97,14 @@ Segments and Groups:
 FLAT . . . . . . . . . . . . . .	GROUP
 STACK  . . . . . . . . . . . . .	32 Bit	 00000100 Para	  Stack	  'STACK'	 
 _DATA  . . . . . . . . . . . . .	32 Bit	 0000004D Para	  Public  'DATA'	
-_TEXT  . . . . . . . . . . . . .	32 Bit	 00000053 Para	  Public  'CODE'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000052 Para	  Public  'CODE'	
 
 
 Procedures, parameters, and locals:
 
                 N a m e                 Type     Value    Attr
 
-main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000053 Public C
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000052 Public C
 printf . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
 scanf  . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
 
@@ -145,4 +131,4 @@ x  . . . . . . . . . . . . . . .	DWord	 00000041 _DATA
 y  . . . . . . . . . . . . . . .	DWord	 00000045 _DATA	
 
 	   0 Warnings
-	   4 Errors
+	   0 Errors

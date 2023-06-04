@@ -1,7 +1,7 @@
 ;
 ;   Building Instructions:
 ;   ml /c /Fl"questao6.lst" /Cx /coff questao6.asm /link /SUBSYSTEM:console  /out:questao6.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
-;
+;   ml /Cx /coff questao6.asm /link /SUBSYSTEM:console /out:questao6.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 
         .686
         .model  flat, c
@@ -15,13 +15,14 @@ msg1    byte    "Para x = ", 0
 msg2    byte    " multiplicado por y = ", 0
 msg3    byte    " o resultado e: ", 0
 x      sdword 10
-y       sdword 0
+
+y      sdword 5
 
 result  sdword 0
 
      .code
 MULACC  MACRO   operand
-          if operant EQ 0
+          if operand EQ 0
                mov eax, 0
           elseif operand EQ 1
                nop
@@ -48,7 +49,7 @@ MULACC  MACRO   operand
           
 main    proc
           mov eax, x
-          MULACC y 
+          MULACC 0
           mov result, eax
           INVOKE  printf, ADDR msg1fmt, ADDR msg1, x, ADDR msg2, y, ADDR msg3, result
 main    endp
