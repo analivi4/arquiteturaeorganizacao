@@ -1,12 +1,20 @@
 ## Capítulo 4 ##
+> Correção: 1,1
+
 
 ### Questão 1
+
+> Correção: 0,2. Não podemos usar duas posições de memória em _cmp_.
+
   - a ) errado, usa == para comparar duas coisas.
   - b ) errado, o uso do them esta errado, não precisa usando diretivas 
   - c ) correto sintaticamente, mas não vai fazer o esperado.
   - d ) correto.
 
 ### Questão 2
+
+> Correção: 0,3
+
   ```asm
     mov eax, b
     mov ebx, c
@@ -32,6 +40,8 @@
   ```
 
 ### Questão 3
+
+> Correção: 0,3
 
   - A)
   ```asm
@@ -79,6 +89,8 @@
   ``` 
 
 ### Questão 4
+
+> Correção: 0,3
 
 ```
 if (a<=b)
