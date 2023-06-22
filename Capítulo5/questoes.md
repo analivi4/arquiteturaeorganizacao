@@ -1,6 +1,9 @@
 # Capítulo 5
 
  ### Questão 1
+
+> Correção: 0,1
+
   - a - incorreta, não existe essas diretivas em MASM
   - b - incorreta, falta o . na frente do while
   - c - correta
@@ -8,6 +11,9 @@
   - e - incorreta, as diretivas estão erradas
 
  ### Questão 2
+
+> Correção: 0,1
+
    ```asm
             mov ans, 0
     if01:   cmp x,0
@@ -26,12 +32,17 @@
 ```
 
  ### Questão 3
+
+> Correção: 0,1
+
    - a - 3 vezes 
    - b - 1 vez
    - c - Nenhuma vez
 
  ### Questão 4
  
+> Correção: 0,1
+
    ```asm
         mov ans,0
     if01:   cmp y, 0
@@ -49,6 +60,9 @@
     endif01: nop
    ```
    ### Questão 5 (tem o os arquivos .asm de cada item na pasta do capítulo)
+   
+   > Correção: 0,1
+
    - a 
    ```asm
    ;com diretiva
@@ -107,6 +121,9 @@
 
    ```
  ### Questão 6 (tem o o arquivo .asm na pasta do capítulo)
+
+> Correção: 0,1
+
  ```asm
         mov sum, 0
         mov eax, 1
@@ -121,6 +138,8 @@
  ```
  Dessa forma n ser menor ou igual a 0 não acontecerá nada, vai ser como se não tivesse entrado no loop, que é exatamente o que aconteceria no código em C.
  ### Questão 7
+
+> Correção: 0,2
 
  - Com diretiva
   ```asm
@@ -146,6 +165,8 @@
 
   ```
  ### Questão 8
+
+> Correção: 0,0. É um laço dentro do outro, mas você só está retornando para o primeiro.
 
   ```asm
         mov ecx, 2
