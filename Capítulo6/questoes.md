@@ -1,5 +1,7 @@
 # Capítulo 6
 
+> Correção: 0,5
+
  ### Questão 1
      - a) Correto
      - b) Correto
@@ -12,6 +14,8 @@
      - i) Incorreto, shift não é uma instrução
 
  ### Questão 2
+
+> Correção: 0,5
 
     - a)
     ```asm
@@ -48,6 +52,9 @@
     sub a, eax
     ```
  ### Questão 3 (Teste da questão usando variáveis no .asm)
+
+> Correção: 0,5
+
   ```asm
         push eax
         push ebx
