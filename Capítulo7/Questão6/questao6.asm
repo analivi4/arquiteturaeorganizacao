@@ -1,4 +1,4 @@
-;
+;   Correção: 1,0
 ;   Building Instructions:
 ;   ml /c /Fl"questao6.lst" /Cx /coff questao6.asm /link /SUBSYSTEM:console  /out:questao6.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 ;   ml /Cx /coff questao6.asm /link /SUBSYSTEM:console /out:questao6.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
@@ -49,7 +49,7 @@ MULACC  MACRO   operand
           
 main    proc
           mov eax, x
-          MULACC 0
+          MULACC 7
           mov result, eax
           INVOKE  printf, ADDR msg1fmt, ADDR msg1, x, ADDR msg2, y, ADDR msg3, result
 main    endp
