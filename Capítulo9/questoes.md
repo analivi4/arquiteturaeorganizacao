@@ -3,11 +3,11 @@
 #### Questão 1
 
      a) Incorreto, o correto seria movsb
-     b) 
+     b) Correto
      c) Correto
-     d) 
-     e) Incorreto, o correto seria rep stosb
-     f) 
+     d) Incorreto, o correto seria storsb
+     e) 
+     f) Incorreto, o correto seria lodsb
 
 #### Questão 2
 
