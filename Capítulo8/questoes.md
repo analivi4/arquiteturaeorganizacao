@@ -21,9 +21,8 @@
      h) 14
 
 ### Questão 3
-
+     
      a)
-
   ```asm
      mov num+0, 1
   ```
