@@ -12,7 +12,7 @@
 #### Questão 2
 
      a) ecx = 2, esi=undefined, edi = 103, al = “c”
-     b) ecx = 0 , esi=103, edi = undefined, al = 3
+     b) ecx = 0 , esi=103, edi = undefined, al = 3  ;nao tenho certeza
      c) ecx = 1, esi=104, edi = 109, al = undefined
      d) 
      e) ecx = 0, esi=undefined, edi = 109, al = undefined
