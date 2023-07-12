@@ -1,4 +1,4 @@
-;
+; Correção: 0,5
 ;   Building Instructions:
 ;   ml /Cx /coff itemA.asm /link /SUBSYSTEM:console  /out:itemA.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 ;   
@@ -14,7 +14,7 @@ msg2fmt   byte    "%d ", 0
 msg1      byte    "Array ordenado:", 0
 
 n         sdword  7
-array     sdword  64, 34, 25, 12, 22, 11, 90
+array     sdword  1, 20, 3, 40, 5, 60, 7
 temp      sdword  ?
           .code
 main      proc

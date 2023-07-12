@@ -3,6 +3,8 @@
 
 ### Questão 1
 
+> Correção: 0,5
+
      a) Correto 
      b) Correto
      c) Correto
@@ -11,6 +13,8 @@
      f) Incorreto, seria como fazer um mov memória para memória, o que não é possível.
 
 ### Questão 2
+
+> Correção: 0,5
 
      a) 5
      b) 200
@@ -22,7 +26,9 @@
      h) 14
 
 ### Questão 3
-     
+
+> Correção: 0,5
+
      a)
   ```asm
      mov num+0, 1
@@ -47,6 +53,9 @@
 ```
 
 ### Questão 4
+
+> Correção: 0,4. A letra F é 6.
+
 
      a) 5
      b) 20
