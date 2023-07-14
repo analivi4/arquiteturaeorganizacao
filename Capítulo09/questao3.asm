@@ -1,4 +1,4 @@
-;
+;   Correção: 1,0
 ;   Building Instructions:
 ;   ml /Cx /coff questao3.asm /link /SUBSYSTEM:console  /out:questao3.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 ;   

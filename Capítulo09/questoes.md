@@ -2,6 +2,8 @@
 
 #### Questão 1
 
+> Correção: 0,5.
+
      a) Incorreto, o correto seria movsb
      b) Correto
      c) Correto
@@ -10,6 +12,8 @@
      f) Incorreto, o correto seria lodsb
 
 #### Questão 2
+
+> Correção: 0,5.
 
      a) ecx = 2, esi = undefined, edi = 103, al = “c”
      b) ecx = undefined , esi = 104, edi = undefined, al = "d" 
