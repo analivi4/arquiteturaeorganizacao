@@ -76,6 +76,8 @@ endif01:  nop
 ```
 ### Questão 7
 
+> Correção: 0,5
+
 ```asm
 if01:     fld y
           fld x
