@@ -62,6 +62,8 @@ d)
 ```
 ### Questão 6
 
+> Correção: 0,5
+
 ```asm
 if01:     fld y
           fld x
