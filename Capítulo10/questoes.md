@@ -2,12 +2,16 @@
 
 ### Questão 1
 
+> Correção: 0,5
+
      a) 8
      b) 8
      c) 4
      d) 14
 
 ### Questão 2
+
+> Correção: 0,3
 
 a)
 ```asm
@@ -41,6 +45,9 @@ c)
      ftst info
 ```
 d)
+
+> Correção: Aqui, pela ordem de avaliação, o _i_ e _j_ seria multiplicados primeiro. 
+
 ```asm
      fld k
      fld m
