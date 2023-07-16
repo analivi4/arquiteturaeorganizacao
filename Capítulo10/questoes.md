@@ -96,3 +96,7 @@ else02:   INVOKE printf, ADDR msg1fmt, ADDR msg3 ; considere msg3: x and y are e
 endif02:  nop
 endif01:  nop
 ```
+
+# Questão 08
+
+> Correção: 0,0
