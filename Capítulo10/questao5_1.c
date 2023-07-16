@@ -1,3 +1,4 @@
+// Correção: 0,5
 /*
    Building Instructions:
    cl questao5_1.c
